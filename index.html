@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>منصة الميزان</title>
+
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0F172A">
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+
+<body>
+<iframe src="https://www.mizaniq.online"></iframe>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
